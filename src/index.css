@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Minimalist global selection */
+::selection {
+  background-color: rgba(59, 130, 246, 0.25);
+  color: inherit;
+}
+
+/* Professional PDF Text Layer Selection */
+.pdf-text-layer, .text-layer, .textLayer {
+  position: absolute;
+  text-align: initial;
+  inset: 0;
+  overflow: hidden;
+  opacity: 1;
+  line-height: 1;
+  text-size-adjust: none;
+  forced-color-adjust: none;
+  transform-origin: 0 0;
+  pointer-events: auto;
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+.pdf-text-layer span, .text-layer span, .textLayer span {
+  color: transparent !important;
+  position: absolute;
+  white-space: pre;
+  cursor: text;
+  transform-origin: 0% 0%;
+  pointer-events: auto;
+}
+
+.pdf-text-layer span::selection, .text-layer span::selection, .textLayer span::selection {
+  background: rgba(59, 130, 246, 0.25) !important; /* Clean academic translucent blue */
+  color: transparent !important;
+}
+
+.pdf-text-layer br, .text-layer br, .textLayer br {
+  user-select: none;
+}

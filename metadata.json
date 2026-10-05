@@ -1,0 +1,8 @@
+{
+  "name": "PaperMind - Minimalist AI Paper Reader",
+  "description": "A lightweight, desktop-optimized academic paper reader with drag-and-drop PDF reading, instant annotations, arXiv TeX deconstruction, OpenRouter/Gemini AI copilot, and persistent concept memory.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
